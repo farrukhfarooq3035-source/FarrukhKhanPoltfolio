@@ -1,0 +1,39 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark-900 text-white antialiased;
+}
+
+::selection {
+  background: rgba(0, 102, 255, 0.4);
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-glass-med;
+}
+
+.section-padding {
+  @apply py-20 md:py-28;
+}
+
+.container-base {
+  @apply mx-auto w-full max-w-7xl px-6;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent;
+}
+
+.border-glow {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.25);
+}
